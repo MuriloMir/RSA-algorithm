@@ -5,6 +5,6 @@ This implementation is almost complete, I had to use smaller numbers for the sak
 
 You may use this code as a guide when you are learning or when you try to implement your own version.
 
-Notice it uses the number 85 as the plain text message before it creates the cypher text message, you can change this number if you wish.
+Notice it uses the number 85 as the plain text message before it creates the cypher text message, you can change this number if you wish, it will first encrypt and then decrypt the number.
 
-If you want to run it then just compile it with the DMD compiler and then run it, it tells the user all the variables and how long it will take to finish decrypting the plain text message.
+If you want to run it then just compile it with the DMD compiler and then run it, it tells the user all the variables and how long it will take to finish decrypting the cypher text message.
