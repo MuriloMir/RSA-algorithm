@@ -108,6 +108,9 @@ void main()
     // create the numbers used in the RSA computations
     ulong P, Q, N, T, E, D, M, C;
 
+    // tell the user we are now encrypting the message
+    writeln("Encrypting:");
+
     // start a loop to keep selecting primes from the array above
     do
         // select 'P' and 'Q' randomly from the array 'primes' above
@@ -131,6 +134,8 @@ void main()
     M = 85, C = to!ulong(power(M, E) % N);
     // print all the number so that the user may see them
     writeln("P: ", P, "\nQ: ", Q, "\nN: ", N, "\nT: ", T, "\nE: ", E, "\nD: ", D, "\nM: ", M, "\nC: ", C);
+    // tell the user we are now decrypting the message
+    writeln("Decrypting:");
     // invert the RSA to obtain the original message by calculating 'C ^ D mod N', then print it, the number is so big we have to use the function 'power()' above,
     // notice we must convert 'BigInt' to 'ulong' after it is done with the modulo
     writeln(power(C, D) % N);
